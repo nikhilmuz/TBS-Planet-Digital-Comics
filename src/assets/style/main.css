@@ -1,0 +1,11 @@
+.page {
+    background: #ececec;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+.logo {
+    height: 40px;
+    width: auto;
+}

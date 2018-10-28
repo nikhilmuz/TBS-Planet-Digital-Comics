@@ -1,0 +1,17 @@
+.page-not-found {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+.error-icon {
+    width: 50%;
+    /* border: 1px solid #d8d8dd; */
+    font-size: 50px;
+}
+.text-404 {
+    font-size: 25px;
+}
+.tagline-404-error {
+    max-width: 400px;
+}

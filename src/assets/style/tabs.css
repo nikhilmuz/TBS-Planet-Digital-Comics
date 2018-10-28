@@ -1,0 +1,15 @@
+.tab {
+}
+.tab-panel {
+    padding: 20px;
+}
+.coms-item {
+    /* float: left; */
+    padding-bottom: 20px;
+}
+.ant-tabs {
+    height: auto !important;
+}
+.ant-card-body {
+    padding: 10px !important;
+}
