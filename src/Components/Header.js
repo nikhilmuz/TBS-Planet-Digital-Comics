@@ -20,15 +20,10 @@ export default class Header extends React.Component {
         this.toggle = this.toggle.bind(this);
         this.state = {
             isOpen: false,
-            isLoggedIn: false,
+            isLoggedIn: this.props.isLoggedIn||false,
         };
     }
     componentWillReceiveProps (nextProps) {
-        if (nextProps.isLoggedIn !== this.props.isLoggedIn) {
-            this.setState({
-                isLoggedIn: nextProps.isLoggedIn
-            })
-        }
     }
     toggle() {
         this.setState({
@@ -36,6 +31,8 @@ export default class Header extends React.Component {
         });
     }
     logout = () => {
+        localStorage.clear();
+        window.location.href="/";
     };
     render() {
         return (
@@ -62,7 +59,7 @@ export default class Header extends React.Component {
                                     <UncontrolledDropdown nav inNavbar>
                                         <DropdownToggle nav caret>
                   <span className="user-name">
-                    Hello, Guest
+                    Hello, {localStorage.getItem('short_name')}
                   </span>
                                         </DropdownToggle>
                                         <DropdownMenu right>

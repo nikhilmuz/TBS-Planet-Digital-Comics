@@ -77,7 +77,7 @@ const LandingPage = () => {
     return (
         <div className="landing-page">
             <Container>
-                <SlidingTabs list={list} showIcons onClickPath={`${'http://localhost:3000'}/comic`} />
+                <SlidingTabs list={list} />
             </Container>
         </div>
     )

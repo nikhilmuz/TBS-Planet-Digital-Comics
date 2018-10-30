@@ -42,6 +42,9 @@ class Register extends Component {
                     {
                         window.location.href = '/otp';
                         localStorage.setItem('Token', response.data.token );
+                        localStorage.setItem('short_name', response.data.short_name );
+                        localStorage.setItem('full_name', response.data.short_name );
+                        localStorage.setItem('email', response.data.email );
                     }
                 )
                 .catch(

@@ -33,6 +33,9 @@ class Login extends Component {
                 {
                     console.log(response.data);
                     localStorage.setItem('Token', response.data.token );
+                    localStorage.setItem('short_name', response.data.short_name );
+                    localStorage.setItem('full_name', response.data.short_name );
+                    localStorage.setItem('email', response.data.email );
                     if(response.data.verified){
                         window.location.href = '/dashboard';
                     }
