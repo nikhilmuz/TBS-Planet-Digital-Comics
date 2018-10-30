@@ -12,7 +12,6 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem } from 'reactstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class Header extends React.Component {
     constructor(props) {
