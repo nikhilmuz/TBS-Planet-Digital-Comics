@@ -54,7 +54,7 @@ export default class Header extends React.Component {
                             {
                                 !this.state.isLoggedIn ?
                                     <NavItem>
-                                        <NavLink href='/'>SignIn</NavLink>
+                                        <NavLink href='https://www.tbsplanet.com/'>Visit TBS Planet</NavLink>
                                     </NavItem> :
                                     <UncontrolledDropdown nav inNavbar>
                                         <DropdownToggle nav caret>

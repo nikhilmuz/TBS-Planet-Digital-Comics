@@ -50,8 +50,14 @@ class Register extends Component {
                 .catch(
                     error =>
                     {
-                        alert('An Error Occurred. If you are already registered, try logging in instead.');
-                        window.location.href = '/';
+                        if (error.response){
+                            if(error.response.status===400){
+                                alert(error.response.data[Object.keys(error.response.data)[0]])
+                            }
+                        }
+                        else{
+                            alert('Internet Disconnected')
+                        }
                     }
                 )
         }

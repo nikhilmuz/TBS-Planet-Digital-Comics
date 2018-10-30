@@ -8,50 +8,20 @@ const list = [
         language: 'Hindi',
         listOfCom: [
             {
-                com_id: '1',
+                id: '1',
                 title: 'आप कैसे है ',
-                img: 'https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350',
-                url: 'https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350',
-                description: 'this is my discription'
+                genre: 'HRR',
+                link: 'https://tbspla.net/loremipsum',
+                episodes: '10',
+                cover: 'https://link.to.cover/with-directory'
             },
             {
-                com_id: '2',
-                title: 'आप कैसे है  2',
-                img: 'https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350',
-                url: 'https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350',
-                description: 'आप कैसे है '
-            },
-            {
-                title: 'आप कैसे है e67',
-                img: 'https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350',
-                url: 'https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350',
-                description: 'this is my discription'
-            },
-
-            {
-                title: 'title345',
-                img: 'https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350',
-                url: 'https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350',
-                description: 'this is my discription'
-            },
-
-            {
-                title: 'title3432',
-                img: 'https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350',
-                url: 'https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350',
-                description: 'this is my discription'
-            },
-            {
-                title: 'title3',
-                img: 'https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350',
-                url: 'https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350',
-                description: 'this is my discription'
-            },
-            {
-                title: 'title4',
-                img: 'https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350',
-                url: 'https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350',
-                description: 'this is my discription'
+                id: '2',
+                title: 'आप कैसे है 1',
+                genre: 'HRR',
+                link: 'https://tbspla.net/loremipsum',
+                episodes: '10',
+                cover: 'https://link.to.cover/with-directory'
             }
         ]
     },
@@ -60,18 +30,24 @@ const list = [
         language: 'English',
         listOfCom: [
             {
-                title: 'title',
-                img: 'https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350',
-                url: 'https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350',
+                id: '3',
+                title: 'Title 1',
+                genre: 'HRR',
+                link: 'https://tbspla.net/loremipsum',
+                episodes: '10',
+                cover: 'https://link.to.cover/with-directory'
             },
             {
-                title: 'title2',
-                img: 'https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350',
-                url: 'https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&h=350',
+                id: '4',
+                title: 'Title 2',
+                genre: 'HRR',
+                link: 'https://tbspla.net/loremipsum',
+                episodes: '10',
+                cover: 'https://link.to.cover/with-directory'
             }
         ]
     }
-]
+];
 
 const LandingPage = () => {
     return (
@@ -81,6 +57,6 @@ const LandingPage = () => {
             </Container>
         </div>
     )
-}
+};
 
 export default LandingPage;
