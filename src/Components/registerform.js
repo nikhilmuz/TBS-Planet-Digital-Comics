@@ -15,8 +15,6 @@ class NormalRegisterForm extends React.Component {
             }
         });
     };
-    register = () => {
-    };
     render() {
         const { getFieldDecorator } = this.props.form;
         return (

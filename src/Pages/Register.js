@@ -1,24 +1,59 @@
 import React, { Component } from 'react'
 import { Container } from 'reactstrap'
 import WrappedNormalRegisterForm from './../Components/registerform'
+import axios from "axios";
+import {API_ROOT} from "../Config";
+
+const SIGNUP_API = 'users/register/';
+
 class Register extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isLoggedIn: false,
             openedTab: 'Register'
         }
     }
     componentWillMount () {
-        this.setState({
-            isLoggedIn: false
-        });
         document.title = `${this.state.openedTab} | TBS Planet`
     }
     componentDidMount () {
     }
     callback = (res) => {
-        if (res.remember && res.userName) {
+        let fn = res.firstName;
+        let ln = res.lastName;
+        let ph = res.phone;
+        let email = res.email;
+        let pwd = res.password;
+        let cnfpwd = res.cnfpassword;
+        if(pwd===cnfpwd){
+            axios
+                .post(
+                    API_ROOT+SIGNUP_API,
+                    {
+                        email: email,
+                        first_name: fn,
+                        last_name: ln,
+                        phone: ph,
+                        password: pwd,
+                    }
+                )
+                .then(
+                    response =>
+                    {
+                        window.location.href = '/otp';
+                        localStorage.setItem('Token', response.data.token );
+                    }
+                )
+                .catch(
+                    error =>
+                    {
+                        alert('An Error Occurred. If you are already registered, try logging in instead.');
+                        window.location.href = '/';
+                    }
+                )
+        }
+        else {
+            alert('Passwords doesn\'t match');
         }
         return null
     };
@@ -26,8 +61,6 @@ class Register extends Component {
         return (
             <section className="">
                 <Container>
-                    {
-                        !this.state.isLoggedIn &&
                         <center>
                             <div className="login-widget">
                                 <div className="login-inner">
@@ -35,13 +68,9 @@ class Register extends Component {
                                 </div>
                             </div>
                         </center>
-                    }
                 </Container>
             </section>
         )
     }
 }
-Register.defaultProps = {
-    login: false
-};
 export default Register
