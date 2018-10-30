@@ -50,7 +50,7 @@ const list = [
                 id:'',
                 title: 'Varun-2',
                 genre:'SHR',
-                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/eng/sagar.jpg',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/eng/varun2.jpg',
                 episodes:'No. of episodes: 12',
                 link:'https://www.tbsplanet.com/dailycomics/varun/2/eng/episodes.html',
                 target: '_blank'
