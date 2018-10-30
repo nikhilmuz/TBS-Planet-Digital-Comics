@@ -1744,6 +1744,11 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
+bootstrap@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.1.3.tgz#0eb371af2c8448e8c210411d0cb824a6409a12be"
+  integrity sha512-rDFIzgXcof0jDyjNosjv4Sno77X4KuPeFxG2XZZv1/Kc8DRVGVADdoQyyOVDwPqL36DDmtCQbrpMCqvpPLJQ0w==
+
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
@@ -8375,6 +8380,11 @@ react-popper@^0.10.4:
   dependencies:
     popper.js "^1.14.1"
     prop-types "^15.6.1"
+
+react-router-auth@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-router-auth/-/react-router-auth-1.0.1.tgz#b8975ce39a033699834c620a0684dec90f099cc5"
+  integrity sha512-BAerKFR/gTCSnux8E3t6JFOrX+2Q2gRaQN48R4wUD6eztue5H7VZdZJ266An5bZniU6ZtsIOHfornlrkTL47JQ==
 
 react-router-dom@^4.3.1:
   version "4.3.1"
