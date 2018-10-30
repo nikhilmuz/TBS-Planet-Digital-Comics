@@ -11,7 +11,13 @@ class CardComponent extends Component {
         return (
             <Card
                 cover={<img alt="example" src={this.props.cover} />}
-                actions={[<button className="transparent-btn" onClick={() => this.goToPage(this.props.link)}><Icon type="book" /> Read All</button>]}
+                actions={
+                    [
+                        <button className="transparent-btn"
+                                onClick={() => this.goToPage(this.props.link)}>
+                            <Icon type="book" /> Read All</button>
+                    ]
+                }
             >
                 <Meta
                     avatar={this.props.avtar && <Avatar src={this.props.avtar}/>}
