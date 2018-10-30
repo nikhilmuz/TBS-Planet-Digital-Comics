@@ -9,16 +9,19 @@ class SlidingTabs extends React.Component {
         super(props);
         this.state = {
             language: 'English',
+            mode: 'top',
         };
     }
     componentWillMount () {
     }
     render() {
+        const { mode } = this.state;
+        console.log(this.props.onClickPath)
         return (
             <div className="tabs-content">
                 <Tabs
                     defaultActiveKey={this.state.selectedLanguage}
-                    tabPosition="top"
+                    tabPosition={mode}
                 >
                     {
                         this.props.list.length > 0 &&
@@ -31,14 +34,14 @@ class SlidingTabs extends React.Component {
                                                 item.listOfCom.length > 0 &&
                                                 item.listOfCom.map(com => {
                                                     return (
-                                                        <Col lg='3' md='4' sm="6" xs="12" key={com.title}>
+                                                        <Col lg='2' md='4' sm="6" xs="6" key={com.title}>
                                                             <div className="coms-item">
                                                                 <CardComponent
-                                                                    cover="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fnotgoaway.com%2Fwp-content%2Fuploads%2F2017%2F07%2F4K-Wallpaper-53.jpeg&f=1"
-                                                                    title="title"
-                                                                    id="1"
-                                                                    link="http://google.com"
-                                                                    description="Total Episodes: 1"
+                                                                    cover={com.cover}
+                                                                    title={com.title}
+                                                                    id={com.id}
+                                                                    link={com.link}
+                                                                    description={com.episodes}
                                                                 />
                                                             </div>
                                                         </Col>

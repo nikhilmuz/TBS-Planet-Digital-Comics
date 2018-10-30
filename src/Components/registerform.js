@@ -23,40 +23,46 @@ class NormalRegisterForm extends React.Component {
                     {getFieldDecorator('firstName', {
                         rules: [{ required: true, message: 'Please input your First Name!' }],
                     })(
-                        <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="First Name" />
+                        <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                               placeholder="First Name" />
                     )}
                 </FormItem>
                 <FormItem>
                     {getFieldDecorator('lastName')(
-                        <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Last Name" />
+                        <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                               placeholder="Last Name" />
                     )}
                 </FormItem>
                 <FormItem>
                     {getFieldDecorator('phone', {
                         rules: [{ required: true, message: 'This field is required!' }],
                     })(
-                        <Input prefix={<Icon type="phone" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Registered Phone Number" />
+                        <Input prefix={<Icon type="phone" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                               placeholder="Registered Phone Number" />
                     )}
                 </FormItem>
                 <FormItem>
                     {getFieldDecorator('email', {
                         rules: [{ required: true, message: 'This field is required!' }],
                     })(
-                        <Input prefix={<Icon type="mail" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="E-Mail Address" />
+                        <Input prefix={<Icon type="mail" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                               placeholder="E-Mail Address" />
                     )}
                 </FormItem>
                 <FormItem>
                     {getFieldDecorator('password', {
                         rules: [{ required: true, message: 'Please input your Password!' }],
                     })(
-                        <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Password" />
+                        <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                               type="password" placeholder="Password" />
                     )}
                 </FormItem>
                 <FormItem>
                     {getFieldDecorator('cnfpassword', {
                         rules: [{ required: true, message: 'This Field is required!' }],
                     })(
-                        <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Confirm Password" />
+                        <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                               type="password" placeholder="Confirm Password" />
                     )}
                 </FormItem>
                 <FormItem>
