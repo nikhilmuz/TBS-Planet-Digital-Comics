@@ -1,33 +1,55 @@
 import React, { Component } from 'react'
 import { Container } from 'reactstrap'
 import WrappedNormalOtpForm from './../Components/otpform'
+import axios from "axios";
+import {API_ROOT} from "../Config";
+
+const OTP_API = 'users/otp/verify/';
+
 class Otp extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isLoggedIn: false,
             openedTab: 'OTP'
         }
     }
     componentWillMount () {
-        this.setState({
-            isLoggedIn: false
-        });
         document.title = `${this.state.openedTab} | TBS Planet`
     }
     componentDidMount () {
     }
     callback = (res) => {
-        if (res.remember && res.userName) {
-        }
+        let otp = res.otp;
+        axios
+            .post(
+                API_ROOT+OTP_API,
+                {
+                    otp: otp,
+                },
+                {
+                    headers: {
+                        Authorization: 'Token ' + localStorage.getItem('Token'),
+                    }
+                }
+            )
+            .then(
+                response =>
+                {
+                    window.location.href = '/dashboard';
+                }
+            )
+            .catch(
+                error =>
+                {
+                    alert('Incorrect OTP or Internet Disconnected');
+                }
+            );
         return null
     };
     render () {
         return (
             <section className="">
                 <Container>
-                    {
-                        !this.state.isLoggedIn &&
                         <center>
                             <div className="login-widget">
                                 <div className="login-inner">
@@ -35,13 +57,9 @@ class Otp extends Component {
                                 </div>
                             </div>
                         </center>
-                    }
                 </Container>
             </section>
         )
     }
 }
-Otp.defaultProps = {
-    login: false
-};
 export default Otp

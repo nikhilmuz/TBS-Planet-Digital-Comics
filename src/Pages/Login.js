@@ -1,33 +1,61 @@
 import React, { Component } from 'react'
 import { Container } from 'reactstrap'
 import WrappedNormalLoginForm from './../Components/loginform'
+import axios from 'axios'
+import {API_ROOT} from "../Config";
+
+const LOGIN_API = 'users/login/';
 class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isLoggedIn: false,
             openedTab: 'Login'
         }
     }
     componentWillMount () {
-        this.setState({
-            isLoggedIn: false
-        });
         document.title = `${this.state.openedTab} | TBS Planet`
     }
     componentDidMount () {
     }
     callback = (res) => {
-        if (res.remember && res.userName) {
-        }
+        let username = res.username;
+        let password = res.password;
+        axios
+            .post(
+                API_ROOT+LOGIN_API,
+                {
+                    username: username,
+                    password: password,
+                }
+            )
+            .then(
+                response =>
+                {
+                    console.log(response.data);
+                    localStorage.setItem('Token', response.data.token );
+                    localStorage.setItem('short_name', response.data.short_name );
+                    localStorage.setItem('full_name', response.data.short_name );
+                    localStorage.setItem('email', response.data.email );
+                    if(response.data.verified){
+                        window.location.href = '/dashboard';
+                    }
+                    else {
+                        window.location.href = '/otp';
+                    }
+                }
+            )
+            .catch(
+                error =>
+                {
+                    alert('Incorrect password or internet disconnected');
+                }
+            );
         return null
     };
     render () {
         return (
             <section className="">
                 <Container>
-                    {
-                        !this.state.isLoggedIn &&
                         <center>
                             <div className="login-widget">
                                 <div className="login-inner">
@@ -35,13 +63,9 @@ class Login extends Component {
                                 </div>
                             </div>
                         </center>
-                    }
                 </Container>
             </section>
         )
     }
 }
-Login.defaultProps = {
-    login: false
-};
 export default Login

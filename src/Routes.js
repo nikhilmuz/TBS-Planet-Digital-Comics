@@ -8,6 +8,8 @@ import {PageNotFound} from "./Pages/404";
 import Register from "./Pages/Register";
 import Otp from "./Pages/Otp";
 
+const isLoggedIn = !(localStorage.getItem('Token') == null || localStorage.getItem('Token') === "");
+
 export default class Routes extends Component{
     render(){
         return (
@@ -15,13 +17,13 @@ export default class Routes extends Component{
                 <div>
                     <div className='page'>
                         <div className="app-header">
-                            <Header />
+                            <Header isLoggedIn={isLoggedIn} />
                         </div>
                         <Switch>
                             <Route exact path='/' component={Login} />
                             <Route path='/register' component={Register} />
-                            <Route path='/otp' component={Otp} />
-                            <AuthRoute authenticated={true} redirectTo='/' path='/dashboard' component={Landing} />
+                            <AuthRoute authenticated={isLoggedIn} redirectTo='/' path='/otp' component={Otp} />
+                            <AuthRoute authenticated={isLoggedIn} redirectTo='/' path='/dashboard' component={Landing} />
                             <Route path='*' component={PageNotFound} />
                         </Switch>
                     </div>

@@ -9,19 +9,16 @@ class SlidingTabs extends React.Component {
         super(props);
         this.state = {
             language: 'English',
-            mode: 'top',
         };
     }
     componentWillMount () {
     }
     render() {
-        const { mode } = this.state;
-        console.log(this.props.onClickPath)
         return (
             <div className="tabs-content">
                 <Tabs
                     defaultActiveKey={this.state.selectedLanguage}
-                    tabPosition={mode}
+                    tabPosition="top"
                 >
                     {
                         this.props.list.length > 0 &&
@@ -41,7 +38,7 @@ class SlidingTabs extends React.Component {
                                                                     title="title"
                                                                     id="1"
                                                                     link="http://google.com"
-                                                                    description="Desc"
+                                                                    description="Total Episodes: 1"
                                                                 />
                                                             </div>
                                                         </Col>
