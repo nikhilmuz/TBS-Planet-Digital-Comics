@@ -20,7 +20,7 @@ class SlidingTabs extends React.Component {
         return (
             <div className="tabs-content">
                 <Tabs
-                    defaultActiveKey={this.state.selectedLanguage}
+                    defaultActiveKey={this.state.language}
                     tabPosition={mode}
                 >
                     {

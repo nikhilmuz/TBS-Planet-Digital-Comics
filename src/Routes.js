@@ -20,8 +20,8 @@ export default class Routes extends Component{
                             <Header isLoggedIn={isLoggedIn} />
                         </div>
                         <Switch>
-                            <Route exact path='/' component={Login} />
-                            <Route path='/register' component={Register} />
+                            <Route exact path='/' component={() => (<Login authenticated={isLoggedIn} />)} />
+                            <Route path='/register' component={() => (<Register authenticated={isLoggedIn} />)} />
                             <AuthRoute authenticated={isLoggedIn} redirectTo='/' path='/otp' component={Otp} />
                             <AuthRoute authenticated={isLoggedIn} redirectTo='/' path='/dashboard' component={Landing} />
                             <Route path='*' component={PageNotFound} />
