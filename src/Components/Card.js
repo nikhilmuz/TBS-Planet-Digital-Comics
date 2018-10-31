@@ -3,7 +3,7 @@ import { Card, Icon, Avatar } from 'antd';
 
 const { Meta } = Card;
 
-class CardComponent extends Component {
+export class CardComponent extends Component {
     goToPage = (link) => {
         window.location.href = `${link}`
     };
@@ -28,4 +28,3 @@ class CardComponent extends Component {
         )
     }
 }
-export default CardComponent;
