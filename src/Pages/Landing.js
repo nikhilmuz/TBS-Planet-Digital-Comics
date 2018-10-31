@@ -7,6 +7,103 @@ const list = [
 
     {
         id: '',
+        language: 'Hindi',
+        listOfCom: [
+            {
+                id: '1',
+                title: '13 Days 1 ',
+                genre:'HRR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/13days1.jpg',
+                episodes:'No. of episodes: 15',
+                link:'https://www.tbsplanet.com/dailycomics/13days/1/hin/newepisodes.html',
+                target: '_blank',
+                // description: 'this is my discription',
+            },
+            {
+                id: '2',
+                title: '13 Days 2',
+                genre:'HRR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/13days2.jpg',
+                episodes:'No. of episodes: 16',
+                link:'https://www.tbsplanet.com/dailycomics/13days/2/hin/newepisodes.html',
+                target: '_blank',
+                // description: 'आप कैसे है '
+            },
+            {
+                id:'',
+                title: '13 Days 3',
+                genre:'HRR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/13days3.jpg',
+                episodes:'No. of episodes 21',
+                link:'https://www.tbsplanet.com/dailycomics/13days/3/hin/newepisodes.html',
+                target: '_blank',
+                // description: 'this is my discription'
+            },
+
+            {
+                id:'',
+                title: 'Sagar',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/sagar.jpg',
+                episodes:'No. of episodes: 15',
+                link:'https://www.tbsplanet.com/dailycomics/sagar/1/hin/newepisodes.html',
+                // description: 'this is my discription'
+            },
+
+            {
+                id:'',
+                title: 'Varun-2',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/varun2.jpg',
+                episodes:'No. of episodes: 12',
+                link:'https://www.tbsplanet.com/dailycomics/varun/2/hin/newepisodes.html',
+                target: '_blank',
+                // description: 'this is my discription'
+            },
+            {
+                id:'',
+                title: 'Varun-3',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/varun3.jpg',
+                episodes:'No. of episodes: 15',
+                link:'https://www.tbsplanet.com/dailycomics/varun/3/hin/newepisodes.html',
+                target: '_blank',
+                // description: 'this is my discription'
+            },
+            {
+                id:'',
+                title: 'Uttara',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/varun4.jpg',
+                episodes:'No. of episodes: 15',
+                link:'https://www.tbsplanet.com/dailycomics/varun/4/hin/newepisodes.html',
+                target: '_blank',
+                // description: 'this is my discription'
+            },
+            {
+                id:'',
+                title: 'Takshak-1',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/takshak1.jpg',
+                episodes:'No. of episodes: 15',
+                link:'https://www.tbsplanet.com/dailycomics/Takshak/1/hin/newepisodes.html',
+                target: '_blank',
+                // description: 'this is my discription'
+            },
+            {
+                id:'',
+                title: 'Takshak-2',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/takshak2.jpg',
+                episodes:'No. of episodes: 14',
+                link:'https://www.tbsplanet.com/dailycomics/takshak/2/hin/newepisodes.html',
+                target: '_blank',
+                // description: 'this is my discription'
+            },
+        ]
+    },
+    {
+        id: '',
         language: 'English',
         listOfCom: [
             {
@@ -108,103 +205,6 @@ const list = [
                 link:'https://www.tbsplanet.com/dailycomics/yug/1/eng/newepisodes.html',
             },
 
-        ]
-    },
-    {
-        id: '',
-        language: 'Hindi',
-        listOfCom: [
-            {
-                id: '1',
-                title: '13 Days 1 ',
-                genre:'HRR',
-                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/13days1.jpg',
-                episodes:'No. of episodes: 15',
-                link:'https://www.tbsplanet.com/dailycomics/13days/1/hin/newepisodes.html',
-                target: '_blank',
-                // description: 'this is my discription',
-            },
-            {
-                id: '2',
-                title: '13 Days 2',
-                genre:'HRR',
-                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/13days2.jpg',
-                episodes:'No. of episodes: 16',
-                link:'https://www.tbsplanet.com/dailycomics/13days/2/hin/newepisodes.html',
-                target: '_blank',
-                // description: 'आप कैसे है '
-            },
-            {
-                id:'',
-                title: '13 Days 3',
-                genre:'HRR',
-                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/13days3.jpg',
-                episodes:'No. of episodes 21',
-                link:'https://www.tbsplanet.com/dailycomics/13days/3/hin/newepisodes.html',
-                target: '_blank',
-                // description: 'this is my discription'
-            },
-
-            {
-                id:'',
-                title: 'Sagar',
-                genre:'SHR',
-                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/sagar.jpg',
-                episodes:'No. of episodes: 15',
-                link:'https://www.tbsplanet.com/dailycomics/sagar/1/hin/newepisodes.html',
-                // description: 'this is my discription'
-            },
-
-            {
-                id:'',
-                title: 'Varun-2',
-                genre:'SHR',
-                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/varun2.jpg',
-                episodes:'No. of episodes: 12',
-                link:'https://www.tbsplanet.com/dailycomics/varun/2/hin/newepisodes.html',
-                target: '_blank',
-                // description: 'this is my discription'
-            },
-            {
-                id:'',
-                title: 'Varun-3',
-                genre:'SHR',
-                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/varun3.jpg',
-                episodes:'No. of episodes: 15',
-                link:'https://www.tbsplanet.com/dailycomics/varun/3/hin/newepisodes.html',
-                target: '_blank',
-                // description: 'this is my discription'
-            },
-            {
-                id:'',
-                title: 'Uttara',
-                genre:'SHR',
-                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/varun4.jpg',
-                episodes:'No. of episodes: 15',
-                link:'https://www.tbsplanet.com/dailycomics/varun/4/hin/newepisodes.html',
-                target: '_blank',
-                // description: 'this is my discription'
-            },
-            {
-                id:'',
-                title: 'Takshak-1',
-                genre:'SHR',
-                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/takshak1.jpg',
-                episodes:'No. of episodes: 15',
-                link:'https://www.tbsplanet.com/dailycomics/Takshak/1/hin/newepisodes.html',
-                target: '_blank',
-                // description: 'this is my discription'
-            },
-            {
-                id:'',
-                title: 'Takshak-2',
-                genre:'SHR',
-                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/takshak2.jpg',
-                episodes:'No. of episodes: 14',
-                link:'https://www.tbsplanet.com/dailycomics/takshak/2/hin/newepisodes.html',
-                target: '_blank',
-                // description: 'this is my discription'
-            },
         ]
     },
     {
