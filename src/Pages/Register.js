@@ -14,6 +14,9 @@ class Register extends Component {
         }
     }
     componentWillMount () {
+        if (this.props.authenticated){
+            window.location.href="/dashboard"
+        }
         document.title = `${this.state.openedTab} | TBS Planet`
     }
     componentDidMount () {
