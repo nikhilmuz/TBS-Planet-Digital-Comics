@@ -8,7 +8,8 @@ import {PageNotFound} from "./Pages/404";
 import Register from "./Pages/Register";
 import Otp from "./Pages/Otp";
 
-const isLoggedIn = !(localStorage.getItem('Token') == null || localStorage.getItem('Token') === "");
+localStorage.setItem('short_name','Guest');
+const isLoggedIn = !(localStorage.getItem('short_name') == null || localStorage.getItem('short_name') === "");
 
 export default class Routes extends Component{
     render(){
