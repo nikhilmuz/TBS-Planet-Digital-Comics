@@ -8,7 +8,7 @@ class SlidingTabs extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            language: 'English',
+            language: 'Hindi',
             mode: 'top',
         };
     }
