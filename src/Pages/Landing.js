@@ -204,6 +204,15 @@ const list = [
                 episodes:'No. of episodes: 14',
                 link:'https://www.tbsplanet.com/dailycomics/yug/1/eng/newepisodes.html',
             },
+            {
+                id:'',
+                title: 'Rudra',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/eng/rudra.jpg',
+                episodes:'No. of episodes: 12',
+                link:'https://www.tbsplanet.com/dailycomics/rudra/1/eng/newepisodes.html',
+                target: '_blank'
+            },
 
         ]
     },
