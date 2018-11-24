@@ -28,7 +28,8 @@ export default class Header extends React.Component {
     toggle() {
         this.setState({
             isOpen: !this.state.isOpen
-        });
+        }
+        );
     }
     logout = () => {
         localStorage.clear();
