@@ -372,6 +372,15 @@ const list = [
                 link:'https://www.tbsplanet.com/dailycomics/yug/1/tel/newepisodes.html',
                 target: '_blank'
             },
+            {
+                id:'',
+                title: 'Shankhnabh (Varun-5)',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/tel/varun5.jpg',
+                episodes:'No. of episodes: 15',
+                link:'https://www.tbsplanet.com/dailycomics/varun/5/tel/newepisodes.html',
+                target: '_blank'
+            },
 
 
         ]
