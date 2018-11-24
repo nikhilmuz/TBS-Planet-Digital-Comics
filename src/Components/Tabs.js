@@ -16,7 +16,6 @@ class SlidingTabs extends React.Component {
     }
     render() {
         const { mode } = this.state;
-        console.log(this.props.onClickPath)
         return (
             <div className="tabs-content">
                 <Tabs

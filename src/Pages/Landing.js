@@ -86,7 +86,7 @@ const list = [
                 genre:'SHR',
                 cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/takshak1.jpg',
                 episodes:'No. of episodes: 15',
-                link:'https://www.tbsplanet.com/dailycomics/Takshak/1/hin/newepisodes.html',
+                link:'https://www.tbsplanet.com/dailycomics/takshak/1/hin/newepisodes.html',
                 target: '_blank',
                 // description: 'this is my discription'
             },
