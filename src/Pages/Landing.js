@@ -381,6 +381,15 @@ const list = [
                 link:'https://www.tbsplanet.com/dailycomics/varun/5/tel/newepisodes.html',
                 target: '_blank'
             },
+            {
+                id:'',
+                title: 'Takshak-2',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/tel/takshak2.jpg',
+                episodes:'No. of episodes: 14',
+                link:'https://www.tbsplanet.com/dailycomics/takshak/2/tel/newepisodes.html',
+                target: '_blank'
+            },
 
 
         ]
@@ -450,6 +459,15 @@ const list = [
                 cover: 'https://cdn.tbsplanet.com/dailycomics/covers/ben/yug1.jpg',
                 episodes:'No. of episodes: 15',
                 link:'https://www.tbsplanet.com/dailycomics/yug/1/ben/newepisodes.html',
+                target: '_blank'
+            },
+            {
+                id:'',
+                title: 'Uttara (Varun-4)',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/ben/varun4.jpg',
+                episodes:'No. of episodes: 15',
+                link:'https://www.tbsplanet.com/dailycomics/varun/4/ben/newepisodes.html',
                 target: '_blank'
             },
         ]
