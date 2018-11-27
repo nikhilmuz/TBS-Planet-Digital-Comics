@@ -201,7 +201,7 @@ const list = [
                 title: 'Yug',
                 genre:'SHR',
                 cover: 'https://cdn.tbsplanet.com/dailycomics/covers/eng/yug1.jpg',
-                episodes:'No. of episodes: 1',
+                episodes:'No. of episodes: 15',
                 link:'https://www.tbsplanet.com/dailycomics/yug/1/eng/newepisodes.html',
             },
             {
@@ -212,6 +212,14 @@ const list = [
                 episodes:'No. of episodes: 12',
                 link:'https://www.tbsplanet.com/dailycomics/rudra/1/eng/newepisodes.html',
                 target: '_blank'
+            },
+            {
+                id:'',
+                title: 'Rankshetra Yug-2',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/eng/yug2.jpg',
+                episodes:'No. of episodes: 15',
+                link:'https://www.tbsplanet.com/dailycomics/yug/2/eng/newepisodes.html',
             },
 
         ]
