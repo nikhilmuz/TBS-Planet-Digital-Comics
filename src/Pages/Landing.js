@@ -201,7 +201,7 @@ const list = [
                 title: 'Yug',
                 genre:'SHR',
                 cover: 'https://cdn.tbsplanet.com/dailycomics/covers/eng/yug1.jpg',
-                episodes:'No. of episodes: 14',
+                episodes:'No. of episodes: 1',
                 link:'https://www.tbsplanet.com/dailycomics/yug/1/eng/newepisodes.html',
             },
             {
