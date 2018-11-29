@@ -124,7 +124,6 @@ const list = [
                 link:'https://www.tbsplanet.com/dailycomics/13days/2/eng/newepisodes.html',
                 target: '_blank'
             },
-
             {
                 id:'',
                 title: '13 Days 3',
@@ -221,7 +220,28 @@ const list = [
                 episodes:'No. of episodes: 15',
                 link:'https://www.tbsplanet.com/dailycomics/yug/2/eng/newepisodes.html',
             },
-
+            {
+                id:'',
+                title: 'Ashok',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/eng/ashok.jpg',
+                episodes:'No. of episodes: 1',
+                link:'https://www.tbsplanet.com/dailycomics/ashok/1/eng/index.html',
+            },{
+                id:'',
+                title: 'Hanuman',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/eng/hanuman.jpg',
+                episodes:'No. of episodes: 1',
+                link:'https://www.tbsplanet.com/dailycomics/hanuman/1/eng/index.html',
+            },{
+                id:'',
+                title: 'Eklavya',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/eng/eklavya.jpg',
+                episodes:'No. of episodes: 1',
+                link:'https://www.tbsplanet.com/dailycomics/eklavya/1/eng/comics.html',
+            },
         ]
     },
     {
@@ -500,6 +520,7 @@ const list = [
                 link:'https://www.tbsplanet.com/dailycomics/sagar/1/tel/newepisodes.html',
                 target: '_blank'
             }
+
         ]
     }
 ];
