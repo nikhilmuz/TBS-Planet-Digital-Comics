@@ -14,7 +14,7 @@ export default class CardComponent extends Component {
                 actions={
                     [
                         <button className="transparent-btn"
-                                onClick={() => this.goToPage(this.props.link)}>
+                                 onClick={() => this.goToPage(this.props.link)}>
                             <Icon type="book" /> Read All</button>
                     ]
                 }

@@ -100,6 +100,16 @@ const list = [
                 target: '_blank',
                 // description: 'this is my discription'
             },
+            {
+                id:'',
+                title: 'बोलती गुफा ',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/hin/talkingcave.jpg',
+                episodes:'No. of episodes: 1',
+                link:'https://www.tbsplanet.com/dailycomics/talkingcave/1/hin/comics.html',
+                target: '_blank',
+                // description: 'this is my discription'
+            },
         ]
     },
     {
@@ -226,21 +236,31 @@ const list = [
                 genre:'SHR',
                 cover: 'https://cdn.tbsplanet.com/dailycomics/covers/eng/ashok.jpg',
                 episodes:'No. of episodes: 1',
-                link:'https://www.tbsplanet.com/dailycomics/ashok/1/eng/index.html',
-            },{
+                link:'https://www.tbsplanet.com/dailycomics/ashok/1/eng/comics.html',
+            },
+            {
                 id:'',
                 title: 'Hanuman',
                 genre:'SHR',
                 cover: 'https://cdn.tbsplanet.com/dailycomics/covers/eng/hanuman.jpg',
                 episodes:'No. of episodes: 1',
                 link:'https://www.tbsplanet.com/dailycomics/hanuman/1/eng/index.html',
-            },{
+            },
+            {
                 id:'',
                 title: 'Eklavya',
                 genre:'SHR',
                 cover: 'https://cdn.tbsplanet.com/dailycomics/covers/eng/eklavya.jpg',
                 episodes:'No. of episodes: 1',
-                link:'https://www.tbsplanet.com/dailycomics/eklavya/1/eng/comics.html',
+                link:'https://www.tbsplanet.com/dailycomics/eklayva/1/eng/comics.html',
+            },
+            {
+                id:'',
+                title: 'Gautama Buddha',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/eng/buddha.jpg',
+                episodes:'No. of episodes: 1',
+                link:'https://www.tbsplanet.com/dailycomics/buddha/1/eng/comics.html',
             },
         ]
     },
