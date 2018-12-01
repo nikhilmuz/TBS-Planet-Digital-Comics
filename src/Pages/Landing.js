@@ -262,6 +262,22 @@ const list = [
                 episodes:'No. of episodes: 1',
                 link:'https://www.tbsplanet.com/dailycomics/buddha/1/eng/comics.html',
             },
+            {
+                id:'',
+                title: 'East India Company',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/eng/eastindiacompany.jpg',
+                episodes:'No. of episodes: 1',
+                link:'https://www.tbsplanet.com/dailycomics/eastindiacompany/1/eng/comics.html',
+            },
+            {
+                id:'',
+                title: 'Chanakya',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/eng/chanakya.jpg',
+                episodes:'No. of episodes: 1',
+                link:'https://www.tbsplanet.com/dailycomics/chanakya/1/eng/comics.html',
+            },
         ]
     },
     {
