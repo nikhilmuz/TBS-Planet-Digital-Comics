@@ -278,6 +278,14 @@ const list = [
                 episodes:'No. of episodes: 1',
                 link:'https://www.tbsplanet.com/dailycomics/chanakya/1/eng/comics.html',
             },
+            {
+                id:'',
+                title: 'Kalpana Chawla',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/eng/kalpanachawla.jpg',
+                episodes:'No. of episodes: 1',
+                link:'https://www.tbsplanet.com/dailycomics/kalpanachawla/1/eng/comics.html',
+            },
         ]
     },
     {
