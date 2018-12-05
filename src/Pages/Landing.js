@@ -286,6 +286,15 @@ const list = [
                 episodes:'No. of episodes: 1',
                 link:'https://www.tbsplanet.com/dailycomics/kalpanachawla/1/eng/comics.html',
             },
+            {
+                id:'',
+                title: 'Jhansi Ki Rani',
+                genre:'SHR',
+                cover: 'https://cdn.tbsplanet.com/dailycomics/covers/eng/jhansikirani.jpg',
+                episodes:'No. of episodes: 1',
+                link:'https://www.tbsplanet.com/dailycomics/kalpanachawla/1/eng/comics.html',
+            },
+
         ]
     },
     {
